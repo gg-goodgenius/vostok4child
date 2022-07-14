@@ -43,6 +43,20 @@ export const Task = () => {
             </React.Fragment>
           }/>
       </ListItemButton>
+      {open[0] ? <ExpandLess /> : <ExpandMore />}
+      <Collapse in={open[0]} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemText primary="Опять потоп" />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemText primary="Мама устала" />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemText primary="Папин гараж" />
+          </ListItemButton>
+        </List>
+      </Collapse>
       <ListItemButton>
         <ListItemIcon>
           <Filter2Icon />
@@ -58,7 +72,7 @@ export const Task = () => {
           <Filter3Icon />
         </ListItemIcon>
         <ListItemText primary="Третий уровень" />
-        {open[0] ? <ExpandLess /> : <ExpandMore />}
+        {/* {open[0] ? <ExpandLess /> : <ExpandMore />} */}
       </ListItemButton>
       {/* <Collapse in={open[0]} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
