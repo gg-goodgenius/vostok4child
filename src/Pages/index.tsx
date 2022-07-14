@@ -4,6 +4,7 @@ import { Device } from './Device';
 import { Main } from './Main'
 import { Page404 } from './Page404';
 import { Task } from './Task';
+import { TaskDetail } from './TaskDetail';
 
 const pages = {
     Main: {
@@ -25,6 +26,10 @@ const pages = {
     Task: {
         element: <Page><Task /></Page>,
         path: '/task/',
+    },
+    TaskDetail: {
+        element: <Page><TaskDetail /></Page>,
+        path: '/task/:id',
     },
 }
 

@@ -11,12 +11,12 @@ import Filter3Icon from '@mui/icons-material/Filter3';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import { history } from '../Database/History'
+import { useParams } from 'react-router';
 
 export const Task = () => {
   const [open1, setOpen1] = React.useState(false);
   const [open2, setOpen2] = React.useState(false);
   const [open3, setOpen3] = React.useState(false);
-
   const handleClick = (i: number) => {
     if (i === 1) {
       setOpen1(!open1)
