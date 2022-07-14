@@ -14,9 +14,9 @@ const theme = createTheme()
 export const Page = ({ children }: Props) => {
     return (
         <ThemeProvider theme={theme} >
-            <Container maxWidth={false}>
+            <Container maxWidth={false} >
                 <Navbar />
-                <div className='page'>
+                <div className='page' style={{ marginTop:"16px" }}>
                     <CssBaseline />
                     {children}
                 </div>

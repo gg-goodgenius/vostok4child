@@ -96,6 +96,7 @@ export const Navbar = () => {
                                 color: 'inherit',
                                 textDecoration: 'none',
                             }}
+                            onClick={()=>{handleClick('/')}}
                         >
                             УМКА
                         </Typography>
