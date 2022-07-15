@@ -13,6 +13,8 @@
 
 # Запуск
 ``` 
+git clone https://github.com/gg-goodgenius/vostok4child
+cd vostok4child
 yarn
 yarn start
 ```
