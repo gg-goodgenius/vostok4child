@@ -42,7 +42,7 @@ export const DeviceScheme = () => {
     node4.setPosition(250, 200);
 
     const model = new DiagramModel();
-    model.addAll(node1, node2, node3, link2, link);
+    model.addAll(node1, node2, node3, node4, link2, link);
     engine.setModel(model);
     return <div><CanvasWidget className='widget' engine={engine} /></div>
 }
