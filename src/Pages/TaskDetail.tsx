@@ -1,5 +1,6 @@
 import { useParams } from 'react-router';
 import { history } from './../Database/History' 
+import { device } from './../Database/Device'
 import { Button, Chip, Rating } from '@mui/material';
 
 export const TaskDetail = () => {
@@ -9,9 +10,10 @@ export const TaskDetail = () => {
     <div>
       <h1 style={{textAlign:"center"}}>{his.title}</h1>
       <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
-        <div>{his.elements.map((item)=>{
-          return <Chip label={item} size="small" style={{margin:"4px"}}/>
-        })}</div><div><Rating name="read-only" value={his.level} readOnly max={3} /></div>
+        <div>{device.filter((filterItem)=>{return his.elements.includes(filterItem.id)}).map((item)=> {
+          return <Chip label={item.title} size="small" style={{margin:"4px"}}/>
+        })}
+        </div><div><Rating name="read-only" value={his.level} readOnly max={3} /></div>
       </div>
       <p style={{textAlign:"justify", fontSize: "14pt"}}>{his.text}</p>
       <Button fullWidth color='primary' href={'/device/'+his.id}>Собрать</Button>

@@ -21,12 +21,13 @@ export const Device = () => {
     return (
         <div style={{ height: "100vh" }}>
             <div style={{ height: "70vh" }}>
-                <DeviceScheme/>
+                <DeviceScheme devs={devices}/>
             </div>
             <div style={{ borderTopWidth: "1px"}}>
                 { devices.map((item:any, index:number) => {
                     return <Button fullWidth key={index}>{item.title}</Button>
                 })}
+                <Button fullWidth href='/code'>Перейти к коду</Button>
             </div>
         </div>
     );
