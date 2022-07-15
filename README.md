@@ -18,3 +18,7 @@ cd vostok4child
 yarn
 yarn start
 ```
+# Долонительные материалы:
+Figma: https://www.figma.com/file/4r6GpkfoDfVjiOA9jNZmV3/
+Demo: https://umka.goodgenius.ru
+Youtube: https://youtu.be/P4tYkYUoIYM
