@@ -31,6 +31,10 @@ const pages = {
         element: <Page><TaskDetail /></Page>,
         path: '/task/:id',
     },
+    DeviceDetail: {
+        element: <Page><Device /></Page>,
+        path: '/device/:id',
+    },
 }
 
 export default pages;

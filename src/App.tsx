@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import pages from "./Pages";
 import { Page404 } from './Pages/Page404';
+import './App.css'
 
 function App() {
   return (
